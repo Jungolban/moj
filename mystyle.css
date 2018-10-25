@@ -19,3 +19,16 @@
     padding: 50px 50px 5px 50px;
     position: relative; 
 }
+
+.ImgSlides {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
