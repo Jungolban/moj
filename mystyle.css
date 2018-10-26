@@ -27,14 +27,12 @@ html {
 /* 상단 부분 */
 
 #nav_menu {
-    z-index: 2;
 	height: 90px;
 	width: auto;
 	margin: 20px 0px 0px 0px;
 }
 
 #nav_menu ul {
-    z-index: 1;
     list-style-type: none;
     margin: 0;
     float: right;
