@@ -7,70 +7,100 @@
 </head>
 
 <body>
-    <div id="nav_menu">
-        <img src="moj_logo.png", width="400", height="70">
-        <ul>
-            <li>문제</li>
-            <li>대회</li>
-            <li>랭킹</li>
-            <li>마이페이지</li>
-            <li>게시판</li>
-        </ul>
+    <div id="content-top">
+        <div id="nav_menu">
+            <img src="moj_logo.png">
+            <ul>
+                <li>문제</li>
+                <li>대회</li>
+                <li>랭킹</li>
+                <li>마이페이지</li>
+                <li>게시판</li>
+            </ul>
+        </div>
     </div>
 
-    <div id="login">
-        <form action="#" method="post">
-            <div>
-                <input type="text" id="ID" placeholder="id">
+    <div id="content-bottom">
+        <div id="content-left">
+            <div id="recommendation" class="margin-auto">
+                <h3>추천 문제</h3>
+                <div id="recommendation-box">
+
+                </div>
             </div>
-            <div>
-                <label for="PW"></label>
-                <input type="password" id="PW" placeholder="password">
+
+            <div id="newly-updated-problems" class="margin-auto">
+                <h3>새로 추가된 문제</h3>
+                <div id="newly-updated-problems-box">
+
+                </div>
             </div>
-            <button type="submit" id="submitLogin">
-                LOGIN
-            </button>
-        </form>
-    </div>
-    <div>
-        <ul>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">아이디 &middot; 비밀번호 찾기</a></li>
-        </ul>
-    </div>
-    <div id="mainImages">
-        <img class="ImgSlides" src="main_img_1.jpg">
-        <img class="ImgSlides" src="main_img_2.jpg">
-        <img class="ImgSlides" src="main_img_3.jpg">
+        </div>
 
-        <script>
-            var slideIndex = 0;
-            carousel();
+        <div id="content-middle">
+            <div id="mainImages">
+                <img class="ImgSlides margin-auto" src="main_img_1.jpg">
+                <img class="ImgSlides margin-auto" src="main_img_2.jpg">
+                <img class="ImgSlides margin-auto" src="main_img_3.jpg">
 
-            function carousel() {
-                var x = document.getElementsByClassName("ImgSlides");
-                for(var i = 0; i < x.length; ++i) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if(slideIndex > x.length) { slideIndex = 1;}
-                x[slideIndex - 1].style.display = "block";
-                setTimeout(carousel, 5000);
-            }
-        </script>
+                <script>
+                    var slideIndex = 0;
+                    carousel();
+                            
+                    function carousel() {
+                        var x = document.getElementsByClassName("ImgSlides");
+                        for (var i = 0; i < x.length; ++i) {
+                            x[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > x.length) {
+                            slideIndex = 1;
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        setTimeout(carousel, 10000);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="content-right">
+            <div class="margin-auto">
+                <div id="login">
+                    <form action="#" method="GET">
+                        <div id="login-input">
+                            <input type="text" id="ID" placeholder="id" checked>
+                            <input type="password" id="PW" placeholder="password" checked>
+                        </div>
+                        
+                        <button type="submit" id="submitLogin">LOGIN</button>
+                    </form>
+                </div>
+                <div id="register-find">
+                    <ul>
+                        <li><a href="#">회원가입</a></li>
+                        <li> | </li>
+                        <li><a href="#">아이디 &middot; 비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div id="ranking" class="margin-auto">
+                <h3>&#x1F451; Ranking</h3>
+                <div id="ranking-box">
+                    <!-- 서버쪽에서 랭킹 <li>만들어서 추가해줘야 함. -->
+                    <!-- 아래 것들은 예시 -->
+                    <ol>
+                        <li>koosaga</li>
+                        <li>ntopia</li>
+                        <li>klimmek55</li>
+                        <li>cubelover</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="ranking">
-        <h3>&#x1F451; Ranking</h3>
-    </div>
-
-    <div id="recommendation">
-        <h3>추천 문제</h3>
-    </div>
-
-    <div id="newly_updated_problems">
-        <h3>새로 추가된 문제</h3>
-    </div>
 </body>
 
 </html>
