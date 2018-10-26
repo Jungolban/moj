@@ -41,7 +41,6 @@ html {
 }
 
 #nav_menu ul li {
-    display: inline;
     float: left;
     padding: 50px 50px 5px 50px;
     position: relative; 
