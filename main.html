@@ -7,10 +7,9 @@
 </head>
 
 <body>
-<<<<<<< HEAD
     <div id="content-top">
         <div id="nav_menu">
-            <a href="./main.html"><img src="moj_logo.png"></a>
+            <img src="moj_logo.png">
             <ul>
                 <li>문제</li>
                 <li>대회</li>
@@ -19,88 +18,59 @@
                 <li>게시판</li>
             </ul>
         </div>
-=======
-    <div id="nav_menu">
-        <img src="moj_logo.png", width="400", height="70">
-        <ul>
-            <li>문제</li>
-            <li>대회</li>
-            <li>랭킹</li>
-            <li>마이페이지</li>
-            <li>게시판</li>
-        </ul>
->>>>>>> parent of 64a4570... 메인 페이지 다 만듦
     </div>
 
-    <div id="login">
-        <form action="#" method="post">
-            <div>
-                <input type="text" id="ID" placeholder="id">
+    <div id="content-bottom">
+        <div id="content-left">
+            <div id="notice" class="margin-auto">
+                <h3>공지사항</h3>
+                <div id="notice-box">
+                    <ul>
+                        <li><a href="#">사과 말씀</a></li>
+                        <li><a href="#">안녕하세요</a></li>
+                        <li><a href="#">아아앗..</a></li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <label for="PW"></label>
-                <input type="password" id="PW" placeholder="password">
-            </div>
-            <button type="submit" id="submitLogin">
-                LOGIN
-            </button>
-        </form>
-    </div>
-    <div>
-        <ul>
-            <li><a href="#">회원가입</a></li>
-            <li><a href="#">아이디 &middot; 비밀번호 찾기</a></li>
-        </ul>
-    </div>
-    <div id="mainImages">
-        <img class="ImgSlides" src="main_img_1.jpg">
-        <img class="ImgSlides" src="main_img_2.jpg">
-        <img class="ImgSlides" src="main_img_3.jpg">
 
-<<<<<<< HEAD
+            <div id="newly-updated-problems" class="margin-auto">
+                <h3>새로 추가된 문제</h3>
+                <div id="newly-updated-problems-box">
+                    <ul>
+                        <!-- 백엔드 부탁: 문자열이 13글자 이상이면(공백 포함) 10글자만 보여주고 나머지는 ... ex) 형돈이가 랩을... -->
+                        <li><a href="#">102 문제가 문제로다</a></li>
+                        <li><a href="#">222 형돈이가 랩을 한다 홍 홍 홍</a></li>
+                        <li><a href="#">503 하늘에서 정의가 빗발친다!!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <div id="content-middle">
             <div id="mainImages">
                 <img class="ImgSlides margin-auto" src="main_img_1.jpg">
                 <img class="ImgSlides margin-auto" src="main_img_2.jpg">
                 <img class="ImgSlides margin-auto" src="main_img_3.jpg">
-                
-                <div id="button">
-                    <div class="left" onclick="plusDivs(-1)">&#10094</div>
-                    <div class="right" onclick="plusDivs(+1)">&#10095</div>
-                    <span class="badge" onclick="currentDiv(1)"></span>
-                    <span class="badge" onclick="currentDiv(2)"></span>
-                    <span class="badge" onclick="currentDiv(3)"></span>
-                </div>
 
                 <script>
-                    var slideIndex = 1;
-
-                    showDivs(slideIndex);
-
-                    function plusDivs(n) {
-                        showDivs(slideIndex += n);
-                    }
-
-                    function currentDiv(n) {
-                        showDivs(slideIndex = n);
-                    }
-
-                    function showDivs(n) {
+                    var slideIndex = 0;
+                    carousel();
+                            
+                    function carousel() {
                         var x = document.getElementsByClassName("ImgSlides");
-                        if (n > x.length) { slideIndex = 1 }
-                        if (n < 1) { slideIndex = x.length }
                         for (var i = 0; i < x.length; ++i) {
                             x[i].style.display = "none";
                         }
+                        slideIndex++;
+                        if (slideIndex > x.length) {
+                            slideIndex = 1;
+                        }
                         x[slideIndex - 1].style.display = "block";
+                        setTimeout(carousel, 10000);
                     }
                 </script>
             </div>
-
-            
         </div>
-
-
 
         <div id="content-right">
             <div class="margin-auto">
@@ -110,7 +80,7 @@
                             <input type="text" id="ID" placeholder="id" checked>
                             <input type="password" id="PW" placeholder="password" checked>
                         </div>
-
+                        
                         <button type="submit" id="submitLogin">LOGIN</button>
                     </form>
                 </div>
@@ -122,37 +92,24 @@
                     </ul>
                 </div>
             </div>
+            
 
-=======
-        <script>
-            var slideIndex = 0;
-            carousel();
-
-            function carousel() {
-                var x = document.getElementsByClassName("ImgSlides");
-                for(var i = 0; i < x.length; ++i) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if(slideIndex > x.length) { slideIndex = 1;}
-                x[slideIndex - 1].style.display = "block";
-                setTimeout(carousel, 5000);
-            }
-        </script>
+            <div id="ranking" class="margin-auto">
+                <h3>&#x1F451; Ranking</h3>
+                <div id="ranking-box">
+                    <!-- 서버쪽에서 랭킹 <li>만들어서 추가해줘야 함. -->
+                    <!-- 아래 것들은 예시 -->
+                    <ol>
+                        <li>koosaga</li>
+                        <li>ntopia</li>
+                        <li>klimmek55</li>
+                        <li>cubelover</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div id="ranking">
-        <h3>&#x1F451; Ranking</h3>
-    </div>
->>>>>>> parent of 64a4570... 메인 페이지 다 만듦
-
-    <div id="recommendation">
-        <h3>추천 문제</h3>
-    </div>
-
-    <div id="newly_updated_problems">
-        <h3>새로 추가된 문제</h3>
-    </div>
 </body>
 
 </html>
