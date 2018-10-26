@@ -3,25 +3,20 @@ html {
     padding: 0;
 }
 
-/* 랭킹, 추천 문제, 새로운 문제 박스 */
-
-#ranking > #ranking-box {
-    border: 1px solid #1D9595;
-    width: 200px;
+.margin-auto {
+    margin: auto;
 }
 
-#ranking {
-    float: left;
+a {
+    text-decoration-line: none;
 }
 
-#notice > #notice-box {
-    border: 1px solid #1D9595;
-    width: 200px;
+a:visited {
+    color: black;
 }
 
-#newly-updated-problems > #newly-updated-problems-box {
-    border: 1px solid #1d9595;
-    width: 200px;
+a:hover {
+    color: #1D9595;
 }
 
 /* 상단 부분 */
@@ -35,7 +30,9 @@ html {
 #nav_menu ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
     float: right;
+    box-sizing: content-box;
 }
 
 #nav_menu ul li {
@@ -43,7 +40,42 @@ html {
     padding: 25px 50px;
 }
 
-/* 가운데 이미지 */
+#content-top {
+    margin: 0px 50px;
+}
+
+@media (max-width: 1141px), (max-height: 610px) {
+    #content-bottom {
+        margin-top: 50px;
+    }
+}
+
+/* 아래쪽 */
+
+#content-bottom {
+    border-top: 2px solid gray;
+    padding: 50px 50px 50px 100px;
+}
+
+/* 왼쪽 */
+
+#content-bottom > #content-left {
+    width: 200px;
+    float: left;
+    box-sizing: border-box;
+}
+
+#notice > #notice-box {
+    border: 1px solid #1D9595;
+    width: 200px;
+}
+
+#newly-updated-problems > #newly-updated-problems-box {
+    border: 1px solid #1d9595;
+    width: 200px;
+}
+
+/* 가운데 */
 
 .ImgSlides {
     animation: fadeIn 5s;
@@ -69,28 +101,15 @@ html {
     height: 450px;
 }
 
-/* Grid 그리드 */
-
-#content-top {
-    margin: 0px 50px;
-}
-
-#content-bottom {
-    border-top: 2px solid gray;
-    padding: 50px 50px 50px 100px;
-}
-
-#content-bottom > #content-left {
-    width: 200px;
-    float: left;
-    box-sizing: border-box;
-}
+/* 오른쪽 */
 
 #content-bottom > #content-right {
     width: 200px;
     float: left;
     box-sizing: border-box;
 }
+
+/* 로그인 부분 */
 
 #content-right > div:nth-child(1) > div:nth-child(2) > ul {
     font-size: 13px;
@@ -103,12 +122,6 @@ html {
 #content-right > div:nth-child(1) > div:nth-child(2) > ul > li > a {
     display: block;
 }
-
-.margin-auto {
-    margin: auto;
-}
-
-/* 로그인 부분 */
 
 #login-input {
     float: left;
@@ -156,14 +169,13 @@ html {
     display: inline-block;
 }
 
-a {
-    text-decoration-line: none;
+/* 랭킹 */
+
+#ranking > #ranking-box {
+    border: 1px solid #1D9595;
+    width: 200px;
 }
 
-a:visited {
-    color: black;
-}
-
-a:hover {
-    color: #1D9595;
+#ranking {
+    float: left;
 }
