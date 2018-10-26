@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     margin: 0;
     padding: 0;
@@ -33,6 +34,14 @@ html {
     width: auto;
     /*position: relative;*/
     padding: 20px 0px 0px 0px;
+=======
+#nav_menu {
+	height: 90px;
+	width: auto;
+	border-bottom: 2px solid gray;
+	/*position: relative;*/
+	padding: 20px 0px 0px 0px;
+>>>>>>> parent of 64a4570... 메인 페이지 다 만듦
 }
 
 #nav_menu ul {
@@ -49,8 +58,6 @@ html {
     position: relative;
 }
 
-/* 가운데 이미지 */
-
 .ImgSlides {
     animation: fadeIn 5s;
     display: none;
@@ -64,6 +71,7 @@ html {
     to {
         opacity: 1;
     }
+<<<<<<< HEAD
 }
 
 #mainImages {
@@ -188,4 +196,6 @@ a:hover {
 
 .left:hover, .right:hover {
     background-color: rgba(0, 0, 0, 0.8);
+=======
+>>>>>>> parent of 64a4570... 메인 페이지 다 만듦
 }
