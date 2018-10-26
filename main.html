@@ -9,7 +9,7 @@
 <body>
     <div id="content-top">
         <div id="nav_menu">
-            <img src="moj_logo.png">
+            <a href="./main.html"><img src="moj_logo.png"></a>
             <ul>
                 <li>문제</li>
                 <li>대회</li>
@@ -42,26 +42,44 @@
                 <img class="ImgSlides margin-auto" src="main_img_1.jpg">
                 <img class="ImgSlides margin-auto" src="main_img_2.jpg">
                 <img class="ImgSlides margin-auto" src="main_img_3.jpg">
+                
+                <div id="button">
+                    <div class="left" onclick="plusDivs(-1)">&#10094</div>
+                    <div class="right" onclick="plusDivs(+1)">&#10095</div>
+                    <span class="badge" onclick="currentDiv(1)"></span>
+                    <span class="badge" onclick="currentDiv(2)"></span>
+                    <span class="badge" onclick="currentDiv(3)"></span>
+                </div>
 
                 <script>
-                    var slideIndex = 0;
-                    carousel();
-                            
-                    function carousel() {
+                    var slideIndex = 1;
+
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
                         var x = document.getElementsByClassName("ImgSlides");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
                         for (var i = 0; i < x.length; ++i) {
                             x[i].style.display = "none";
                         }
-                        slideIndex++;
-                        if (slideIndex > x.length) {
-                            slideIndex = 1;
-                        }
                         x[slideIndex - 1].style.display = "block";
-                        setTimeout(carousel, 10000);
                     }
                 </script>
             </div>
+
+            
         </div>
+
+
 
         <div id="content-right">
             <div class="margin-auto">
@@ -71,7 +89,7 @@
                             <input type="text" id="ID" placeholder="id" checked>
                             <input type="password" id="PW" placeholder="password" checked>
                         </div>
-                        
+
                         <button type="submit" id="submitLogin">LOGIN</button>
                     </form>
                 </div>
@@ -83,7 +101,7 @@
                     </ul>
                 </div>
             </div>
-            
+
 
             <div id="ranking" class="margin-auto">
                 <h3>&#x1F451; Ranking</h3>
