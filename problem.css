@@ -20,11 +20,14 @@
     position: relative;
 }
 
+#content{
+    padding: 0px 30px
+}
+
 #move {
     height: auto;
     width: auto;
     text-align: left;
-    padding: 0px 30px;
     margin: auto 0px;
 }
 
@@ -47,8 +50,8 @@
     padding: auto;
     position: flex;
     color: white;
-    background-color: #20B2AA;
-    border: 1px solid #20B2AA;
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
 }
 
 #next {
@@ -60,7 +63,6 @@
     width: auto;
     text-align: left;
     padding: 0px 0px 15px 0px;
-    margin: auto 30px;
     border-bottom: 1px solid gray;
 }
 
@@ -70,7 +72,6 @@
 
 #problem_name {
     font-size: 24px;
-    padding: 0px 10px;
 }
 
 #book {
@@ -89,4 +90,51 @@
     padding: 4px 8px;
     color: white;
     background-color: dodgerblue;
+}
+
+#info{
+    font-size: 15px;
+}
+
+#problem{
+    border-bottom: 1px solid grey;
+}
+
+#munjae{
+    font-size: 30px;
+    border-bottom: 1px solid grey;
+}
+
+#munjae p{
+    margin: 0px;
+    width: 62px;
+    border-bottom: 4px solid lightseagreen;
+}
+
+#naeyong{
+    padding: 40px 10px 140px 10px;
+}
+
+#answer{
+    right: 0px;
+    text-align: right;
+    width: 500px;
+}
+
+#answer input{
+    left: 10px;
+    border: none;
+}
+
+#answer input[type=text]{
+    width: 400px;
+    border: 1px solid grey;
+}
+
+#answer input[type=submit]{
+    width: 90px;
+    color: white;
+    background-color: lightseagreen;
+    border: 1px solid grey;
+    padding: 0px;
 }
