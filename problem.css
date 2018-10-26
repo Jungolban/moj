@@ -117,24 +117,27 @@
 
 #answer{
     right: 0px;
-    text-align: right;
-    width: 500px;
+    margin: 10px 0px;
+    float: right;
+    height: auto;
 }
 
 #answer input{
-    left: 10px;
-    border: none;
+    height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid grey;
 }
 
 #answer input[type=text]{
+    height: 40px;
     width: 400px;
-    border: 1px solid grey;
+    padding-left: 10px;
 }
 
 #answer input[type=submit]{
+    height: 40px;
     width: 90px;
-    color: white;
     background-color: lightseagreen;
-    border: 1px solid grey;
-    padding: 0px;
+    color: white;
 }
