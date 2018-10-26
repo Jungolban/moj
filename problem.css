@@ -1,0 +1,92 @@
+#nav_menu {
+    height: 90px;
+    width: auto;
+    border-bottom: 2px solid gray;
+    /*position: relative;*/
+    padding: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    margin: 0px;
+    float: right;
+}
+
+#nav_menu ul li {
+    display: inline;
+    float: left;
+    padding: 50px 50px 5px 50px;
+    position: relative;
+}
+
+#move {
+    height: auto;
+    width: auto;
+    text-align: left;
+    padding: 0px 30px;
+    margin: auto 0px;
+}
+
+#move p {
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+#move div {
+    display: inline-block;
+    margin: 30px auto;
+}
+
+#prev {
+    position: relative;
+    border: 1px solid black;
+}
+
+#number {
+    padding: auto;
+    position: flex;
+    color: white;
+    background-color: #20B2AA;
+    border: 1px solid #20B2AA;
+}
+
+#next {
+    position: flex;
+    border: 1px solid black;
+}
+
+#title {
+    width: auto;
+    text-align: left;
+    padding: 0px 0px 15px 0px;
+    margin: auto 30px;
+    border-bottom: 1px solid gray;
+}
+
+#title div {
+    display: inline-block;
+}
+
+#problem_name {
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+#book {
+    padding: 4px 8px;
+    color: white;
+    background-color: chocolate;
+}
+
+#grade {
+    padding: 4px 8px;
+    color: white;
+    background-color: yellowgreen;
+}
+
+#field {
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
