@@ -1,0 +1,126 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #1D9595;
+}
+
+/* 상단 부분 */
+
+#nav_menu {
+    height: 90px;
+    width: auto;
+    margin: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    box-sizing: content-box;
+}
+
+#nav_menu ul li {
+    float: left;
+    padding: 25px 50px;
+}
+
+#content-top {
+    margin: 0px 50px;
+}
+
+@media (max-width: 1141px),
+(max-height: 610px) {
+    #content-bottom {
+        margin-top: 50px;
+    }
+}
+
+/* 아래쪽 */
+
+#content-bottom {
+    border-top: 2px solid gray;
+    padding: 0px 20px;
+}
+
+#inner-top {
+    border-bottom: 1px solid gray;
+}
+
+.friends {
+    display: inline-block;
+}
+
+#friends-off {
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+}
+
+#friends-on {
+    -webkit-text-fill-color: yellow;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gray;
+}
+
+#bottom-left {
+    display: inline-block;
+    border-right: 1px solid gray;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+.main {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+#main-info-data {
+    width: 90px;
+
+}
+
+#main-info-data>ul {
+    padding: 0px;
+}
+
+#main-info>ul {
+    padding-left: 20px;
+    border-right: 1px solid gray;
+}
+
+#record {
+    margin-top: 30px;
+    margin-left: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.left-right {
+    display: inline-block;
+    vertical-align: top;
+}
