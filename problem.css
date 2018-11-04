@@ -86,7 +86,19 @@
     background-color: yellowgreen;
 }
 
-#field {
+#field_미적분{
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#field_수학{
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#field_확통{
     padding: 4px 8px;
     color: white;
     background-color: dodgerblue;

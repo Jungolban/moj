@@ -1,0 +1,21 @@
+#nav_menu {
+	height: 90px;
+	width: auto;
+	border-bottom: 2px solid gray;
+	/*position: relative;*/
+	padding: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    margin: 0px;
+    float: right;
+}
+
+#nav_menu ul li {
+    display: inline;
+    float: left;
+    padding: 50px 50px 5px 50px;
+    position: relative; 
+}
