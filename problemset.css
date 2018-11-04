@@ -96,6 +96,36 @@
     color: #454545;
 }
 
+.notfullgraph{
+    margin-top: 3px;
+    margin-right: 10px;
+    background-color: grey;
+}
+.fullgraph{
+    margin-top: 3px;
+    margin-right: 10px;
+    background-color: grey;
+}
+.emptygraph{
+    margin-top: 3px;
+    margin-right: 10px;
+    background-color: grey;
+}
+.fullgraph span{
+    background-color: #199700; 
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.notfullgraph span{
+    background-color: #5B9BD5; 
+    text-align: center;
+    display: block;
+    width: 45%;
+}
+
+
+
 #problemsetlist tr:nth-child(even){
     background-color: #e5e5e5;
 }
@@ -157,9 +187,9 @@
 .확률과통계{
     color: #FFC000;
 }
-.notclear{
+.notfavor{
     color:  grey;
 }
-.clear{
+.favor{
     color: #FFC000;
 }
