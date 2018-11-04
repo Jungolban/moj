@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>문제</title>
+    <link rel="stylesheet" type="text/css" href="favorites.css">
+</head>
+
+<body>
+    <div id="nav_menu">
+        <img src="moj_logo.png", width="400", height="70">
+        <ul>
+            <li>문제</li>
+            <li>대회</li>
+            <li>랭킹</li>
+            <li>마이페이지</li>
+            <li>게시판</li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="move">
+            <div id="problem" class="notnow">
+                <a href="problemlist.html">문제</a>
+            </div>
+                <div id="problemset" class="notnow">
+                    <a href="problemset.html">문제집</a>
+                </div>
+                <div id="fovorites" class="now">
+                    <a href="favorites.html">즐겨찾기</a>
+                </div>
+                <div id="wrongproblem" class="notnow">
+                    <a href="wrongproblem.html">틀린 문제</a>
+                </div>
+            <div id="find">
+                <form action="#">
+                    <input type="text" name="findproblem" placeholder="검색">
+                    <input type="submit" name="submit">
+                </form>
+            </div>
+        </div>
+        <table id="list">
+                <tr>
+                    <th>문제 번호</th>
+                    <th>문제 이름</th>
+                    <th>분류</th>
+                    <th>맞은 사람</th>
+                    <th>정답률</th>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>개념원리 미적 II 001</td>
+                    <td><div class="success">성공</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
+                    <td>123,456,789</td>
+                    <td>46.505%</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>개념원리 미적 II 001</td>
+                    <td><div class="fail">실패</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
+                    <td>123,456,789</td>
+                    <td>46.505%</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>개념원리 미적 II 001</td>
+                    <td><div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
+                    <td>123,456,789</td>
+                    <td>46.505%</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>개념원리 미적 II 001</td>
+                    <td><div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
+                    <td>123,456,789</td>
+                    <td>46.505%</td>
+                </tr>
+            </table>
+    </div>
+</body>
+
+</html>
