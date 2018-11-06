@@ -8,16 +8,19 @@ body {
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 input {
+    height: 34px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.16);
     background-color: rgb(236, 236, 236);
     border: 1px solid black;
 }
 
 button {
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 25px;
     border: 1px solid black;
     font-size: 27px;
     color: white;
