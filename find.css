@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+main > div{
+    padding: 50px;
+}
+
+#finding{
+    font-size: 30px;
+    margin: 10px 0px;
+    color: lightseagreen;
+}
+
+form {
+    position: relative;
+    border: 1px solid black;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    width: 510px;
+    
+}
+
+input {
+    width: 500px;
+    height: 34px;
+    font-size: 16px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.16);
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-left: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+button {
+    position: absolute;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 27px;
+    color: white;
+    width: 400px;
+    height: 70px;
+    background-color: #1D9595;
+    bottom: 30px;
+}
