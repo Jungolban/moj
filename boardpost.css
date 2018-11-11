@@ -1,0 +1,76 @@
+#nav_menu {
+    height: 90px;
+    width: auto;
+    border-bottom: 2px solid gray;
+    /*position: relative;*/
+    padding: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    margin: 0px;
+    float: right;
+}
+
+#nav_menu ul li {
+    display: inline;    
+    float: left;
+    padding: 50px 50px 5px 50px;
+    position: relative; 
+}
+
+#content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+#writer{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+#title{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    float: left
+}
+#date{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom:0px;
+    float: right;
+}
+.temp{
+    clear: both;
+}
+#maintext{
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+#commentlist{
+    font-size: 20px;
+    float: left;
+}
+
+#write{
+    color: lightseagreen;
+    float: right;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.commentid{
+    font-size: 18px; 
+    margin-bottom: 10px;
+}
+.comment{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}

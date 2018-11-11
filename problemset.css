@@ -116,11 +116,13 @@
     text-align: center;
     display: block;
     width: 100%;
+    color: white;
 }
 .notfullgraph span{
     background-color: #5B9BD5; 
     text-align: center;
     display: block;
+    color: white;
     width: calc(10/21*100%);
 }
 
