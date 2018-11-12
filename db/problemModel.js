@@ -11,3 +11,4 @@ const problemSchema = new mongo.Schema({
     author : {type: mongo.SchemaTypes.ObjectId, ref:'User'}
 });
 
+module.exports = new mongo.Model('Problem',problemSchema);
