@@ -1,6 +1,6 @@
-problemlist - ¹®Á¦ ¸ñ·Ï
-problemset - ¹®Á¦Áı ¸ñ·Ï
-favorites - Áñ°ÜÃ£±â ¸ñ·Ï
-wrongproblem - Æ²¸°¹®Á¦ ¸ñ·Ï
-board - °Ô½Ã±Û ¸ñ·Ï
-boardpost - °Ô½Ã±Û
+problemlist - ë¬¸ì œ ëª©ë¡
+problemset - ë¬¸ì œì§‘ ëª©ë¡
+favorites - ì¦ê²¨ì°¾ê¸° ëª©ë¡
+wrongproblem - í‹€ë¦°ë¬¸ì œ ëª©ë¡
+board - ê²Œì‹œê¸€ ëª©ë¡
+boardpost - ê²Œì‹œê¸€
