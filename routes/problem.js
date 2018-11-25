@@ -10,6 +10,7 @@ router.get('/list',(req,res)=>{
     const skipSize = (page-1)*10;
     Problem.find({}).sort({date:-1}).skip(skipSize).limit(10)
     .then((result) => {
+        console.log(result);
         res.render('problemlist', {problems:result});
     }).catch((err) => {
       console.error(err);
