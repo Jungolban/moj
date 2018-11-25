@@ -29,7 +29,7 @@ router.get('/wrongs',(req,res)=>{
 });
 
 router.get('/:num',(req,res)=>{
-    Problem.findOne({id:num})
+    Problem.findOne({id:req.params.num})
     .then((result) => {
         res.render('problem',{problem:result});
     }).catch((err) => {
