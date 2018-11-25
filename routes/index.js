@@ -11,7 +11,7 @@ router.get('/',wrap(async(req,res)=>{
     const problems = await problem.find({}).sort({date:-1}).limit(5);
     const rankers = await user.find({}).sort({solvedProblemsAmount:-1}).limit(5);
     let logined;
-    if(req.session) logined = req.session.id;
+    if(req.session.id !== undefined) logined = req.session.id;
     else logined = null;
     res.render('main', { notices: [], problems: [], ranker: [], logined: logined},);
 }));

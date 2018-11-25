@@ -81,7 +81,7 @@
         </div>
 
         <div id="content-right">
-        <% if(!logined) { %>
+        <% if(logined === null) { %>
             <div class="margin-auto">
                 <div id="login">
                     <form action="/auth/login" method="POST">
