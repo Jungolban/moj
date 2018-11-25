@@ -7,4 +7,4 @@ const problemBookSchmea = new mongo.Schema({
     problems : [{type:mongo.SchemaTypes.ObjectId, ref:'Problems'}]
 });
 
-module.exports = new mongo.Model('ProblemBook',problemBookSchmea);
+module.exports = mongo.model('ProblemBook',problemBookSchmea);

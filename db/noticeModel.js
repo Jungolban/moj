@@ -6,4 +6,4 @@ const noticeSchema = new mongo.Schema({
     date: {type:Date, default: Date.now()}
 });
 
-module.exports = new mongo.Model('Notice', noticeSchema);
+module.exports = mongo.model('Notice', noticeSchema);

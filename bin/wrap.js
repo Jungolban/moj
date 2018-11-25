@@ -1,4 +1,4 @@
-module.exprots = asyncFn => {
+const a = asyncFn =>{
     return (async (req, res, next) => {
         try {
             return await asyncFn(req, res, next)
@@ -7,3 +7,4 @@ module.exprots = asyncFn => {
         }
     })
 }
+module.exports = a;

@@ -12,4 +12,4 @@ const postModel = new mongo.Schema({
     }]
 });
 
-module.exports = new mongo.Model('Post', postModel);
+module.exports = mongo.model('Post', postModel);

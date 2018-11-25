@@ -1,7 +1,7 @@
 const mongo = require('mongoose');
 
 const problemSchema = new mongo.Schema({
-    id : {type: Number, default:0, index:true},
+    id : {type: Number, required:true, index:true},
     title :{type: String, required: true},
     contents : {type: String, required: true},
     answer : {type: String, required: true},
@@ -11,4 +11,7 @@ const problemSchema = new mongo.Schema({
     author : {type: mongo.SchemaTypes.ObjectId, ref:'User'}
 });
 
-module.exports = new mongo.Model('Problem',problemSchema);
+const Problem = mongo.model('Problem', problemSchema);
+
+
+module.exports = Problem;

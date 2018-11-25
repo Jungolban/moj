@@ -21,7 +21,7 @@ router.get('/wrongs',(req,res)=>{
     const skipSize = (page-1)* 10;
     User.find({id:req.session.id}).populate('wrongProblems').skip(skipSize).limit(10)
     .then((result) => {
-        res.render('wrongproblem',{problems:result});
+        res.render('wrongproblem',{problems:result.wrongProblems});
     }).catch((err) => {
         console.error(err);
     });
@@ -62,3 +62,5 @@ router.post('/submit/:num',wrap(async(req,res)=>{
         res.render('redirect', { message: '틀렸습니다!', location: '/problem/' + req.params.num });
     }
 }));
+
+module.exports = router;

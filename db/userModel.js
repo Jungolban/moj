@@ -2,7 +2,7 @@ const mongo = require('mongoose');
 
 const problemModel = require('./problemModel');
 const problemBookModel = require('./problemBookModel');
-const contest = require('./contest');
+const contest = require('./contestModel');
 
 const userSchema = new mongo.Schema({
     ID:{type:String, required:true, unique:true, index: true},
@@ -18,4 +18,4 @@ const userSchema = new mongo.Schema({
     markedProblemBooks: [{ type: mongo.SchemaTypes.ObjectId, ref: 'ProblemBook' }]
 });
 
-module.exports = new mongo.Model('User',userSchema);
+module.exports = mongo.model('User',userSchema);

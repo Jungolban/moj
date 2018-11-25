@@ -12,6 +12,7 @@ router.post('/login',(req,res) => {
 
     User.findOne({ID:id})
     .then((result) => {
+        console.log(result);
         if(result.PW === pw)
         res.render('redirect',{message:'로그인 되었습니다', location:'/'});
     }).catch((err) => {
@@ -20,7 +21,7 @@ router.post('/login',(req,res) => {
 });
 
 router.get('/register',(req,res)=>{
-    res.render('register.html');
+    res.render('register.html'); 
 });
 
 router.post('/register',(req,res) =>{
@@ -29,7 +30,7 @@ router.post('/register',(req,res) =>{
 
     User.find({ID:id})
     .then((result) => {
-        if (result) res.render('redirect', { message: '이미 가입된 아이디 입니다', location: '/auth/register' });
+        if (result == []) res.render('redirect', { message: '이미 가입된 아이디 입니다', location: '/auth/register' });
         else{
             const newUser = new User({
                 ID:id,
@@ -38,12 +39,15 @@ router.post('/register',(req,res) =>{
             newUser.save()
             .then(() => {
                 req.session.id = id;
-                res.render('redirect',{message:'회원가입 되었습니다', location:'/auth/login'});
+                res.render('redirect',{message:'회원가입 되었습니다', location:'/'});
             }).catch((err) => {
                 console.error(err);
+            
             });
         }
     }).catch((err) => {
         console.error('err');
     });
 }); 
+ 
+module.exports = router;
