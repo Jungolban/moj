@@ -12,7 +12,6 @@ router.post('/login',(req,res) => {
 
     User.findOne({ID:id})
     .then((result) => {
-        console.log(result);
         if(result.PW === pw){
             req.session.name = id;
             res.render('redirect', { message: '로그인 되었습니다', location: '/' });
@@ -40,7 +39,7 @@ router.post('/register',(req,res) =>{
             });
             newUser.save()
             .then(() => {
-                req.session.id = id;
+                req.session.name = id;
                 res.render('redirect',{message:'회원가입 되었습니다', location:'/'});
             }).catch((err) => {
                 console.error(err);
