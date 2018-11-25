@@ -46,34 +46,16 @@
                     <th>맞은 사람</th>
                     <th>정답률</th>
                 </tr>
-                <tr>
-                    <td>1000</td>
-                    <td>개념원리 미적 II 001</td>
-                    <td><div class="fail">실패</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
-                    <td>123,456,789</td>
-                    <td>46.505%</td>
-                </tr>
-                <tr>
-                    <td>1000</td>
-                    <td>개념원리 미적 II 001</td>
-                    <td><div class="fail">실패</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
-                    <td>123,456,789</td>
-                    <td>46.505%</td>
-                </tr>
-                <tr>
-                    <td>1000</td>
-                    <td>개념원리 미적 II 001</td>
-                    <td><div class="fail">실패</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
-                    <td>123,456,789</td>
-                    <td>46.505%</td>
-                </tr>
-                <tr>
-                    <td>1000</td>
-                    <td>개념원리 미적 II 001</td>
-                    <td><div class="fail">실패</div>, <div class ="book 개념원리">개념원리</div>, <div class="grade 고등">고동</div>, <div class="field 미적분">미적분</div></td>
-                    <td>123,456,789</td>
-                    <td>46.505%</td>
-                </tr>
+                <% for (var i=0;i<10;i++){%>
+                    <tr>
+                        <td>problems[i].id</td>
+                        <td>problems[i].title</td>
+                        <td>problems[i].classification</td>
+                        <td>problems[i].correct</td>
+                        <td>problems[i].correct / problems[i].submissions</td>
+                    </tr>
+                <% } %>
+
             </table>
     </div>
 </body>
