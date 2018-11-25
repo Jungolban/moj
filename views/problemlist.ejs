@@ -48,10 +48,10 @@
                 </tr>
                 <% for(var i=0;i<problems.length;i++) { %>
                 <tr>
-                    <td> <%= problems[i].id %> <td>
-                    <td> <%= problems[i].title %> <td>
-                    <td> <%= problems[i].classfication %> <td>
-                    <td> <%= problems[i].correct %> <td>
+                    <td><a href="<%= "/problem/"+ problems[i].id %>" > <%= problems[i].id %></a> </td>
+                    <td> <%= problems[i].title %> </td>
+                    <td> <%= problems[i].classfication %> </td>
+                    <td> <%= problems[i].correct %> </td>
                     <td> <%= (problems[i].submission / problems[i].correct) *100 %> </td>
                 </tr>
                 <% } %>
