@@ -13,8 +13,10 @@ router.post('/login',(req,res) => {
     User.findOne({ID:id})
     .then((result) => {
         console.log(result);
-        if(result.PW === pw)
-        res.render('redirect',{message:'로그인 되었습니다', location:'/'});
+        if(result.PW === pw){
+            req.session.name = id;
+            res.render('redirect', { message: '로그인 되었습니다', location: '/' });
+        }
     }).catch((err) => {
         console.error(err);
     });
