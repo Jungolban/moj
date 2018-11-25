@@ -1,0 +1,155 @@
+#nav_menu {
+    height: 90px;
+    width: auto;
+    border-bottom: 2px solid gray;
+    /*position: relative;*/
+    padding: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    margin: 0px;
+    float: right;
+}
+
+#nav_menu ul li {
+    display: inline;
+    float: left;
+    padding: 50px 50px 5px 50px;
+    position: relative;
+}
+
+#content{
+    padding: 0px 30px
+}
+
+#move {
+    height: auto;
+    width: auto;
+    text-align: left;
+    margin: auto 0px;
+}
+
+#move p {
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+#move div {
+    display: inline-block;
+    margin: 30px auto;
+}
+
+#prev {
+    position: relative;
+    border: 1px solid black;
+}
+
+#number {
+    padding: auto;
+    position: flex;
+    color: white;
+    background-color: lightseagreen;
+    border: 1px solid lightseagreen;
+}
+
+#next {
+    position: flex;
+    border: 1px solid black;
+}
+
+#title {
+    width: auto;
+    text-align: left;
+    padding: 0px 0px 15px 0px;
+    border-bottom: 1px solid gray;
+}
+
+#title div {
+    display: inline-block;
+}
+
+#problem_name {
+    font-size: 24px;
+}
+
+#book {
+    padding: 4px 8px;
+    color: white;
+    background-color: chocolate;
+}
+
+#grade {
+    padding: 4px 8px;
+    color: white;
+    background-color: yellowgreen;
+}
+
+#field_미적분{
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#field_수학{
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#field_확통{
+    padding: 4px 8px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+#info{
+    font-size: 15px;
+}
+
+#problem{
+    border-bottom: 1px solid grey;
+}
+
+#munjae{
+    font-size: 30px;
+    border-bottom: 1px solid grey;
+}
+
+#munjae p{
+    margin: 0px;
+    width: 62px;
+    border-bottom: 4px solid lightseagreen;
+}
+
+#naeyong{
+    padding: 40px 10px 140px 10px;
+}
+
+#answer{
+    right: 0px;
+    margin: 10px 0px;
+    float: right;
+    height: auto;
+}
+
+#answer input{
+    height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    border: 1px solid grey;
+}
+
+#answer input[type=text]{
+    height: 40px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+#answer input[type=submit]{
+    height: 40px;
+    width: 90px;
+    background-color: lightseagreen;
+    color: white;
+}

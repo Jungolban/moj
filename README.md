@@ -1,2 +1,0 @@
-# moj
-dicon project

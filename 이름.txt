@@ -1,0 +1,6 @@
+problemlist - 문제 목록
+problemset - 문제집 목록
+favorites - 즐겨찾기 목록
+wrongproblem - 틀린문제 목록
+board - 게시글 목록
+boardpost - 게시글

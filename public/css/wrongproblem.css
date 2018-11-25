@@ -1,0 +1,158 @@
+#nav_menu {
+    height: 90px;
+    width: auto;
+    border-bottom: 2px solid gray;
+    /*position: relative;*/
+    padding: 20px 0px 0px 0px;
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    padding: 0px 50px 0px 0px;
+    margin: 0px;
+    float: right;
+}
+
+#nav_menu ul li {
+    display: inline;    
+    float: left;
+    padding: 50px 50px 5px 50px;
+    position: relative; 
+}
+
+#content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+}
+
+.now a{
+    margin: 0px;
+    padding: 0px 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    background-color: lightseagreen;
+    border:8px solid lightseagreen;
+}
+.notnow a{
+    margin : 0px;
+    padding: 0px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#move div {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+#find{
+    right: 20px;
+    margin: 10px 0px;
+    float: right;
+    height: auto;
+}
+#find input{
+    margin: 0px auto;
+    font-size: 15px;
+}
+#find input[type=text]{
+    height: 30px;
+    width: 600px;
+    padding-left: 10px;
+}   
+#find input[type=submit]{
+    font-size: 0px;
+    height: 36px;
+    width: 36px;
+    padding-top: 13px;
+    background-color: lightseagreen;
+}
+
+#list{
+    width: 100%;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+#list th{
+    border: 1px solid #828282;
+    color: white;
+    background-color: lightseagreen;
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+#list td{
+    border: 1px solid #828282;
+    padding-left: 10px;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #454545;
+}
+#list tr:nth-child(even){
+    background-color: #e5e5e5;
+}
+#list tr:nth-child(odd){
+    background-color: #F8F8FF;
+}
+#list td:nth-child(1){
+    width: 10%;
+    table-layout: fixed;
+}
+#list td:nth-child(2){
+    width: 45%;
+    table-layout: fixed;
+}
+#list td:nth-child(3){
+    width: 20%;
+    table-layout: fixed;
+}
+#list td:nth-child(4){
+    width: 10%;
+    table-layout: fixed;
+}
+#list td:nth-child(5){
+    width: 10%;
+    table-layout: fixed;
+}
+.book{
+    display: inline;
+}
+.field{
+    display: inline;
+}
+.grade{
+    display: inline;
+}
+.success{
+    color: green;
+    display: inline;
+}
+.fail{
+    color: red;
+    display: inline;
+}
+.개념원리{
+    color: chocolate;
+}
+.고등{
+    color: yellowgreen;
+}
+.미적분{
+    color: dodgerblue;
+}
+.수학{
+    color: purple;
+}
+.기하와벡터{
+    color: #FFC000;
+}
+.확률과통계{
+    color: #FFC000;
+}

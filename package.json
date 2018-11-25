@@ -1,0 +1,32 @@
+{
+  "name": "moj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/www.js",
+  "bin": {
+    "moj": "wrap.js"
+  },
+  "scripts": {
+    "test": "node ./bin/www.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jungolban/moj.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jungolban/moj/issues"
+  },
+  "homepage": "https://github.com/jungolban/moj#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "html": "^1.0.0",
+    "http-errors": "^1.7.1",
+    "mongoose": "^5.3.13",
+    "morgan": "^1.9.1"
+  }
+}

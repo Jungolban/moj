@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/mainPage_css.css">
+    <title>menubar</title>
+</head>
+
+<body>
+    <div id="content-top">
+        <div id="nav_menu">
+            <a href="/"><img src="img/moj_logo.png"></a>
+            <ul>
+                <li><a href="/problem/list">문제</a></li>
+                <li><a href="#">대회</a></li>
+                <li><a href="/ranking">랭킹</a></li>
+                <li><a href="/mypage">마이페이지</a></li>
+                <li><a href="#">게시판</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content-bottom">
+        <div id="content-left">
+            <div id="notice" class="margin-auto">
+                <h3>공지사항</h3>
+                <div id="notice-box">
+                    <ul>
+                        <li><a href="#">사과 말씀</a></li>
+                        <li><a href="#">안녕하세요</a></li>
+                        <li><a href="#">아아앗..</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="newly-updated-problems" class="margin-auto">
+                <h3>새로 추가된 문제</h3>
+                <div id="newly-updated-problems-box">
+                    <ul>
+                    <% for(var i =0;problems.length;i++) {  %>
+                    <li><a href= <%= "/problem/"+ problems[i].id %> ></a> <%= problems[i].title %> </li>
+                    <% } %>
+                        <!-- 백엔드 부탁: 문자열이 13글자 이상이면(공백 포함) 10글자만 보여주고 나머지는 ... ex) 형돈이가 랩을... 
+                        <li><a href="#">102 문제가 문제로다</a></li>
+                        <li><a href="#">222 형돈이가 랩을 한다 홍 홍 홍</a></li>
+                        <li><a href="#">503 하늘에서 정의가 빗발친다!!</a></li>
+                        -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="content-middle">
+            <div id="mainImages">
+                <img class="ImgSlides margin-auto" src="img/main_img_1.jpg">
+                <img class="ImgSlides margin-auto" src="img/main_img_2.jpg">
+                <img class="ImgSlides margin-auto" src="img/main_img_3.jpg">
+
+                <script>
+                    var slideIndex = 0, Show = true;
+                    carousel();
+                
+                    function carousel() {
+                        var x = document.getElementsByClassName("ImgSlides");
+                        for (var i = 0; i < x.length; ++i) {
+                            x[i].style.display = "none";
+                        }
+
+                        slideIndex++;
+                        if (slideIndex > x.length) {
+                            slideIndex = 1;
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        setTimeout(carousel, 10000);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="content-right">
+        <% if(!logined) { %>
+            <div class="margin-auto">
+                <div id="login">
+                    <form action="/auth/login" method="POST">
+                        <div id="login-input">
+                            <input type="text" name="id" id="id" placeholder="id" checked>
+                            <input type="password" name="pw" id="pw" placeholder="password" checked>
+                        </div>
+
+                        <button type="submit" id="submitLogin">LOGIN</button>
+                    </form>
+                </div>
+                <div id="register-find">
+                    <ul>
+                        <li><a href="/auth/register">회원가입</a></li>
+                        <!-- <li><a href="#">아이디 &middot; 비밀번호 찾기</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        <% } %>
+
+            <div id="ranking" class="margin-auto">
+                <h3>&#x1F451; Ranking</h3>
+                <div id="ranking-box">
+                    <!-- 서버쪽에서 랭킹 <li>만들어서 추가해줘야 함. -->
+                    <!-- 아래 것들은 예시 -->
+                    <ol>
+                        <% for(var i =0;i<ranker.length;i++) { %>
+                            <li> <%= ranker[i].id %> </li>
+                        <% } %>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
